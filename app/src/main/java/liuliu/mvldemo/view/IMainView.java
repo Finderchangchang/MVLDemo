@@ -2,7 +2,7 @@ package liuliu.mvldemo.view;
 
 import java.util.List;
 
-import liuliu.mvldemo.model.MeiNvModel;
+import liuliu.mvldemo.model.NewsTagModel;
 
 /**
  * Created by Finder丶畅畅 on 2016/11/21 23:46
@@ -10,5 +10,5 @@ import liuliu.mvldemo.model.MeiNvModel;
  */
 
 public interface IMainView {
-    void FH_meinv(List<MeiNvModel.NewslistBean> list);//美女列表
+    void result_Tag(List<NewsTagModel.ShowapiResBodyBean.ChannelListBean> list);//美女列表
 }

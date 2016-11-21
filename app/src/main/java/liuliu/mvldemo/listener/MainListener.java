@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import liuliu.mvldemo.model.MeiNvModel;
+import liuliu.mvldemo.model.NewsTagModel;
 import liuliu.mvldemo.util.HttpUtil;
 import liuliu.mvldemo.view.IMainView;
 import rx.Observable;
@@ -17,7 +18,7 @@ import rx.schedulers.Schedulers;
 
 public class MainListener implements MainMView {
     private IMainView mView;
-    List<MeiNvModel.NewslistBean> mList;
+    List<NewsTagModel.ShowapiResBodyBean.ChannelListBean> mList;
 
     public MainListener(IMainView mView) {
         this.mView = mView;
@@ -26,18 +27,18 @@ public class MainListener implements MainMView {
 
     @Override
     public void loadMv() {
-        HttpUtil.load().getMvs("10")
+        HttpUtil.load().getNews_PD()
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .flatMap(userModel -> {//返回List
-                    return Observable.from(userModel.getNewslist());
+                    return Observable.from(userModel.getShowapi_res_body().getChannelList());
                 })
                 .toMap(model -> {//循环获得list中的model
                     mList.add(model);
                     return "";
                 })
                 .subscribe(val -> {
-                    mView.FH_meinv(mList);
+                    mView.result_Tag(mList);
                 });
     }
 }

@@ -12,6 +12,7 @@ import liuliu.mvldemo.R;
 import liuliu.mvldemo.listener.LoginListener;
 import liuliu.mvldemo.listener.MainListener;
 import liuliu.mvldemo.model.MeiNvModel;
+import liuliu.mvldemo.model.NewsTagModel;
 import liuliu.mvldemo.view.ILoginView;
 import liuliu.mvldemo.view.IMainView;
 
@@ -27,7 +28,7 @@ public class MainActivity extends AppCompatActivity implements IMainView {
     }
 
     @Override
-    public void FH_meinv(List<MeiNvModel.NewslistBean> list) {
+    public void result_Tag(List<NewsTagModel.ShowapiResBodyBean.ChannelListBean> list) {
         Toast.makeText(this, "美女共有：" + list.size() + "个", Toast.LENGTH_SHORT).show();
     }
 }
