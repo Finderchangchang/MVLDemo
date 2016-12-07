@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="title_lab_color">#393F3F</color>
+    <color name="total_deep_lab">#333333</color>
+    <color name="total_shallow_lab">#4A576C</color>
+    <color name="list_item_line">#cccccc</color>
+    <color name="title_lab">#303030</color>
+    <color name="peisong_lab">#686868</color>
+    <color name="biaoqian_lab">#A5A5A5</color>
+    <color name="main_item_bottom_bg">#f0f0f0</color>
+    <color name="bottom_normal_lab">#737373</color>
+    <color name="bottom_pressed_lab">#00d8e2</color>
+    <color name="textColor">#fff</color>
+    <color name="red">#FF0000</color>
+</resources>

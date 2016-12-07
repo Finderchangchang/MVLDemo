@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ImageEditText">
+        <attr name="ie_left_text" format="string"></attr>
+        <!-- 左侧显示图片-->
+        <attr name="ie_left_img" format="reference"></attr>
+        <attr name="ie_text" format="string"></attr>
+        <attr name="ie_hint_text" format="string"></attr>
+        <!--EditText底部样式 -->
+        <attr name="ie_et_bg" format="reference"></attr>
+        <attr name="ie_have_del" format="boolean"></attr>
+        <attr name="ie_have_pwd" format="boolean"></attr>
+        <attr name="ie_edit_line" format="integer"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="LabelTextView">
+
+        <attr name="backgroundColor" format="color" />
+        <attr name="numColor" format="color" />
+
+        <attr name="text" format="string" />
+        <attr name="num" format="string" />
+
+        <attr name="numSize" format="dimension" />
+        <attr name="textSize" format="dimension" />
+
+        <attr name="labelTopPadding" format="dimension" />
+        <attr name="labelCenterPadding" format="dimension" />
+        <attr name="labelBottomPadding" format="dimension" />
+
+
+        <attr name="numStyle">
+            <enum name="normal" value="0" />
+            <enum name="italic" value="1" />
+            <enum name="bold" value="2" />
+        </attr>
+
+        <attr name="textStyle">
+            <enum name="normal" value="0" />
+            <enum name="italic" value="1" />
+            <enum name="bold" value="2" />
+        </attr>
+
+        <attr name="direction">
+            <enum name="leftTop" value="-45" />
+            <enum name="rightTop" value="45" />
+        </attr>
+
+
+    </declare-styleable>
+    <declare-styleable name="TitleBar">
+        <attr name="left_iv" format="reference"></attr>
+        <attr name="center_iv" format="reference"></attr>
+        <attr name="center_tv" format="string"></attr>
+        <attr name="right_iv" format="reference"></attr>
+    </declare-styleable>
+</resources>
