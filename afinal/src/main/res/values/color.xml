@@ -12,4 +12,5 @@
     <color name="bottom_pressed_lab">#00d8e2</color>
     <color name="textColor">#fff</color>
     <color name="red">#FF0000</color>
+    <color name="shadew_color">#66000000</color>
 </resources>
