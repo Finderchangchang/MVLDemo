@@ -51,4 +51,6 @@ dependencies {
     compile 'com.squareup.retrofit2:converter-gson:2.1.0'
     compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
     compile 'com.daasuu:BubbleLayout:1.0.0'
+    compile 'com.facebook.rebound:rebound:0.3.8'//动画库
+    compile 'com.tumblr:backboard:+'
 }

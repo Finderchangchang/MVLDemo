@@ -41,6 +41,7 @@
 
     </net.tsz.afinal.view.ArrowRectangleView>
     <com.daasuu.bl.BubbleLayout
+        android:id="@+id/bl"
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:layout_margin="20dp"
@@ -76,12 +77,14 @@
                 android:layout_height="wrap_content" />
 
             <LinearLayout
+                android:id="@+id/dialog_ll"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginBottom="20dp"
                 android:layout_marginRight="20dp"
                 android:layout_marginTop="20dp"
-                android:background="@mipmap/incoming"></LinearLayout>
+                android:background="@mipmap/incoming"
+                android:orientation="horizontal"></LinearLayout>
         </LinearLayout>
 
         <ListView
